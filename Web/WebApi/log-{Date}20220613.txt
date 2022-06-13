@@ -1,0 +1,54 @@
+2022-06-13 11:46:31.551 +03:00 [INF] User profile is available. Using 'C:\Users\kaan.ipek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-13 11:46:32.802 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-13 11:46:32.807 +03:00 [INF] Hosting environment: Development
+2022-06-13 11:46:32.810 +03:00 [INF] Content root path: C:\Users\kaan.ipek\source\repos\LCWaikiki\Web\WebApi
+2022-06-13 11:46:32.898 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44315/index.html  
+2022-06-13 11:46:33.026 +03:00 [INF] Request finished in 132.8476ms 200 text/html;charset=utf-8
+2022-06-13 11:46:33.304 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44315/swagger/v1/swagger.json  
+2022-06-13 11:46:33.426 +03:00 [INF] Request finished in 121.7139ms 200 application/json;charset=utf-8
+2022-06-13 13:01:15.380 +03:00 [INF] User profile is available. Using 'C:\Users\kaan.ipek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-13 13:01:15.815 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-13 13:01:15.817 +03:00 [INF] Hosting environment: Development
+2022-06-13 13:01:15.827 +03:00 [INF] Content root path: C:\Users\kaan.ipek\source\repos\LCWaikiki\Web\WebApi
+2022-06-13 13:01:15.853 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44315/index.html  
+2022-06-13 13:01:15.937 +03:00 [INF] Request finished in 88.1084ms 200 text/html;charset=utf-8
+2022-06-13 13:01:16.122 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44315/swagger/v1/swagger.json  
+2022-06-13 13:01:16.207 +03:00 [INF] Request finished in 85.1769ms 200 application/json;charset=utf-8
+2022-06-13 13:01:36.695 +03:00 [INF] Request starting HTTP/2.0 POST https://localhost:44315/api/customer/AddOrUpdateCustomer application/json-patch+json 68
+2022-06-13 13:01:36.711 +03:00 [INF] Executing endpoint 'WebApi.Controllers.CustomerController.AddOrUpdateCustomer (WebApi)'
+2022-06-13 13:01:36.751 +03:00 [INF] Route matched with {action = "AddOrUpdateCustomer", controller = "Customer"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AddOrUpdateCustomer(WebApi.Model.Customer) on controller WebApi.Controllers.CustomerController (WebApi).
+2022-06-13 13:01:37.167 +03:00 [INF] #Customer #AddOrUpdateCustomer #Request: {"CustomerId":9,"Name":"KEMAL","Address":"MECIDIYEKOY"}
+2022-06-13 13:01:44.473 +03:00 [WRN] No type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-06-13 13:01:44.572 +03:00 [INF] Entity Framework Core 5.0.0 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-06-13 13:01:45.390 +03:00 [INF] Executed DbCommand (52ms) [Parameters=[@__customerId_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[Address], [c].[CreatedDate], [c].[LastUpdatedDate], [c].[Name]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2022-06-13 13:02:16.226 +03:00 [WRN] #Customer #AddOrUpdateCustomer #Request: {"CustomerId":9,"Name":"KEMAL","Address":"MECIDIYEKOY"} #Response: Customer Not Found !
+2022-06-13 13:02:16.238 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2022-06-13 13:02:16.263 +03:00 [INF] Executed action WebApi.Controllers.CustomerController.AddOrUpdateCustomer (WebApi) in 39507.6347ms
+2022-06-13 13:02:16.265 +03:00 [INF] Executed endpoint 'WebApi.Controllers.CustomerController.AddOrUpdateCustomer (WebApi)'
+2022-06-13 13:02:16.270 +03:00 [INF] Request finished in 39581.9767ms 500 application/problem+json; charset=utf-8
+2022-06-13 13:02:58.820 +03:00 [INF] User profile is available. Using 'C:\Users\kaan.ipek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-13 13:02:59.268 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-13 13:02:59.270 +03:00 [INF] Hosting environment: Development
+2022-06-13 13:02:59.279 +03:00 [INF] Content root path: C:\Users\kaan.ipek\source\repos\LCWaikiki\Web\WebApi
+2022-06-13 13:02:59.303 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44315/index.html  
+2022-06-13 13:02:59.384 +03:00 [INF] Request finished in 83.6007ms 200 text/html;charset=utf-8
+2022-06-13 13:02:59.581 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44315/swagger/v1/swagger.json  
+2022-06-13 13:02:59.662 +03:00 [INF] Request finished in 80.5877ms 200 application/json;charset=utf-8
+2022-06-13 13:03:19.266 +03:00 [INF] Request starting HTTP/2.0 POST https://localhost:44315/api/customer/AddOrUpdateCustomer application/json-patch+json 60
+2022-06-13 13:03:19.272 +03:00 [INF] Executing endpoint 'WebApi.Controllers.CustomerController.AddOrUpdateCustomer (WebApi)'
+2022-06-13 13:03:19.307 +03:00 [INF] Route matched with {action = "AddOrUpdateCustomer", controller = "Customer"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AddOrUpdateCustomer(WebApi.Model.Customer) on controller WebApi.Controllers.CustomerController (WebApi).
+2022-06-13 13:03:19.579 +03:00 [INF] #Customer #AddOrUpdateCustomer #Request: {"CustomerId":9,"Name":"TEST","Address":"TEST"}
+2022-06-13 13:03:21.789 +03:00 [WRN] No type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-06-13 13:03:21.881 +03:00 [INF] Entity Framework Core 5.0.0 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-06-13 13:03:22.457 +03:00 [INF] Executed DbCommand (41ms) [Parameters=[@__customerId_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[Address], [c].[CreatedDate], [c].[LastUpdatedDate], [c].[Name]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2022-06-13 13:03:22.475 +03:00 [WRN] #Customer #AddOrUpdateCustomer #Request: {"CustomerId":9,"Name":"TEST","Address":"TEST"} #Response: Customer Not Found !
+2022-06-13 13:03:22.480 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2022-06-13 13:03:22.489 +03:00 [INF] Executed action WebApi.Controllers.CustomerController.AddOrUpdateCustomer (WebApi) in 3174.0772ms
+2022-06-13 13:03:22.492 +03:00 [INF] Executed endpoint 'WebApi.Controllers.CustomerController.AddOrUpdateCustomer (WebApi)'
+2022-06-13 13:03:22.497 +03:00 [INF] Request finished in 3232.9689ms 404 text/plain; charset=utf-8
